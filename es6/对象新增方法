@@ -38,4 +38,13 @@
         };
         上面代码使用了对象属性的简洁表示法，直接将两个函数放在大括号中，再使用assign方法添加到SomeClass.prototype之中。
 
+3.Object.keys()，Object.values()，Object.entries()
+
+  var obj = { foo: 'bar', baz: 42 };
+  Object.keys(obj)
+  // ["foo", "baz"]
+  Object.values(obj)
+  // ["bar", 42]
+  Object.entries(obj)
+  // [ ["foo", "bar"], ["baz", 42] ]
 
