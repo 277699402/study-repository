@@ -29,8 +29,7 @@
       }
     }
 
-    class B extends A {
-    }
+    class B extends A {}
 
     B.hello()  // hello world
 
