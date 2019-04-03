@@ -116,8 +116,9 @@ __ _ ____ __
     这里是[name], 这里是[home]
 
 [name]: http:// www.baidu.com "名称"
-    [home]: http:// www.baidu.com "首页"
-    这里是[name], 这里是[home]
+[home]: http:// www.baidu.com "首页"
+
+这里是[name], 这里是[home]
 
 
 
