@@ -1,5 +1,5 @@
 
-# 1.class类语法 #
+## 1.class类语法 ##
 
     class Point {
         constructor (x,y) {         //构造方法
