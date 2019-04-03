@@ -13,19 +13,19 @@
     var point = new Point(1,2);
     point.toString();
 
-    (1) 一次向类添加多个方法。
-        class Point {
-            constructor () {}
-        }
-        Object.assign(Point.prototype, {
-            toString () {},
-            toValue () {}
-        });
-    (2) 实例的属性除非显式定义在其本身（即定义在this对象上），否则都是定义在原型上（即定义在class上）
-        point.hasOwnProperty('x') // true
-        point.hasOwnProperty('y') // true
-        point.hasOwnProperty('toString') // false
-        point.__proto__.hasOwnProperty('toString') // true
+1. 一次向类添加多个方法。
+    class Point {
+        constructor () {}
+    }
+    Object.assign(Point.prototype, {
+        toString () {},
+        toValue () {}
+    });
+2. 实例的属性除非显式定义在其本身（即定义在this对象上），否则都是定义在原型上（即定义在class上）
+    point.hasOwnProperty('x') // true
+    point.hasOwnProperty('y') // true
+    point.hasOwnProperty('toString') // false
+    point.__proto__.hasOwnProperty('toString') // true
 
 # 2.取值函数（getter）和存值函数（setter）
 
