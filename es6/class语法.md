@@ -13,7 +13,7 @@
     var point = new Point(1,2);
     point.toString();
 
-    (1)一次向类添加多个方法。
+    (1) 一次向类添加多个方法。
         class Point {
             constructor () {}
         }
@@ -79,8 +79,8 @@
     foo.classMethod()
     // TypeError: foo.classMethod is not a function
 
-    (1)父类的静态方法，可以被子类继承。
-    (2)静态方法也是可以从super对象上调用的。
+    * 父类的静态方法，可以被子类继承。
+    # 静态方法也是可以从super对象上调用的。
 
 # 6.静态属性
 
