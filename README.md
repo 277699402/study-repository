@@ -2,4 +2,4 @@
 
 ## es6
 
-[es6](/277699402/study-repository/tree/master/es6)地址
+[es6](/277699402/study-repository/tree/master/es6)
