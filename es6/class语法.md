@@ -1,5 +1,6 @@
 
 #1.class类语法
+
     class Point {
         constructor (x,y) {         //构造方法
             this.x = x;
@@ -27,6 +28,7 @@
         point.__proto__.hasOwnProperty('toString') // true
 
 #2.取值函数（getter）和存值函数（setter）   在“类”的内部可以使用get和set关键字，对某个属性设置存值函数和取值函数，拦截该属性的存取行为。
+
     class MyClass {
       constructor() {
         // ...
@@ -48,16 +50,19 @@
     // 'getter'
 
 #3. 属性表达式
+
     let methodName = 'getArea';
     class Square = {
         [methodName] () {}
     }
 
 #4.name属性
+
     class Point {}
     Point.name  //Point
 
 #5.静态方法  =>  类相当于实例的原型，所有在类中定义的方法，都会被实例继承。如果在一个方法前，加上static关键字，就表示该方法不会被实例继承，而是直接通过类来调用，这就称为“静态方法”。
+
     class Foo {
       static classMethod() {
         return 'hello';
@@ -76,6 +81,7 @@
 #6.静态属性  =>  静态属性指的是 Class 本身的属性，即Class.propName，而不是定义在实例对象（this）上的属性。
 
 #7.new.target属性 => new是从构造函数生成实例对象的命令。
+
     function Person(name) {
       if (new.target !== undefined) {
         this.name = name;
