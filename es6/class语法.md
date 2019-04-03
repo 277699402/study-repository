@@ -80,7 +80,7 @@
     // TypeError: foo.classMethod is not a function
 
     * 父类的静态方法，可以被子类继承。
-    # 静态方法也是可以从super对象上调用的。
+    * 静态方法也是可以从super对象上调用的。
 
 # 6.静态属性
 
