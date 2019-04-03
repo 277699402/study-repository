@@ -25,7 +25,7 @@
     point.hasOwnProperty('x') // true
     point.hasOwnProperty('y') // true
     point.hasOwnProperty('toString') // false
-    point.__proto__.hasOwnProperty('toString') // true
+    point.\_\_proto\_\_.hasOwnProperty('toString') // true
 
 # 2.取值函数（getter）和存值函数（setter）
 
