@@ -107,16 +107,17 @@ __ _ ____ __
 
 ### 支持2种链接方式：行内式和参数式，不管是哪一种，链接文字都是用 [方括号] 来标记。
 
-    [妙语连珠](http:// www.baidu.com)是什么鬼
+    [妙语连珠](http://www.baidu.com)是什么鬼
 
-[妙语连珠](http:// www.baidu.com)是什么鬼
+[妙语连珠](http://www.baidu.com)是什么鬼
 
     [name]: http:// www.baidu.com "名称"
     [home]: http:// www.baidu.com "首页"
     这里是[name], 这里是[home]
 
-[name]: http:// www.baidu.com "名称"
-[home]: http:// www.baidu.com "首页"
+[name]: http://www.baidu.com "名称"
+
+[home]: http://www.baidu.com "首页"
 
 这里是[name], 这里是[home]
 
