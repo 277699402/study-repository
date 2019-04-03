@@ -1,2 +1,3 @@
-# study-repository
-学习资料
+# learn-repository
+
+# [es6]: /277699402/study-repository/tree/master/es6
