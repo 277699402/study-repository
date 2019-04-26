@@ -27,6 +27,9 @@
     js
         objectSpanMethod({ row, column, rowIndex, columnIndex } , length) {}
 
+# vue新增属性无法双向绑定问题
+
+    如果要新增多级对象的属性需要使用  this.$set(obj, name, value) 方法新增，否则该属性无法实现 双向绑定
 
 
 
