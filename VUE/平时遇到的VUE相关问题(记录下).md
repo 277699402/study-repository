@@ -31,6 +31,16 @@
 
     如果要新增多级对象的属性需要使用  this.$set(obj, name, value) 方法新增，否则该属性无法实现 双向绑定
 
+# vue.js 如何在页面渲染完后去操作dom，而且只执行一次？
+
+    在接口请求成功的回调里使用
+
+    this.$nextTick(() =>{
+      // 在这里面去获取DOM
+    })。
+
+    不推荐用updated, beforeUpdate生命周期，这2个生命周期只会在数据发生变化时才触发。如果请求接口的数据是放在created生命周期（推荐放在created里面去发起请求），初次进入页面是不会触发updated, beforeUpdate里面的代码。
+    如果非要updated，并且希望第一次进入页面即可获取到DOM节点，那么在mounted生命周期请求接口数据，而不是created了
 
 
 
