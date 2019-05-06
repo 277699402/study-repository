@@ -14,7 +14,8 @@
     brew info nginx
 
     运行结果:
-    ![图片]: http://www.baidu.com
+
+![图片]: http://www.baidu.com
 
 
 
