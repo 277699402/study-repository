@@ -39,6 +39,9 @@
 
     nginx
 
+    如遇到pid未创建情况需新增pid路径再执行以下命令
+    /usr/local/Cellar/nginx/1.15.12/bin/nginx -c /usr/local/etc/nginx/nginx.conf
+
 ## 七、访问验证:
 
   打开浏览器访问localhost:8080
