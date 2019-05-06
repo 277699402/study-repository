@@ -15,7 +15,7 @@
 
     运行结果:
 
-![图片]: http://www.baidu.com
+![图片](/nginx/images/nginx1.jpg)
 
 
 
