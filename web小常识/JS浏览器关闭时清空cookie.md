@@ -1,6 +1,6 @@
 ### JS浏览器关闭时清空cookie
 
-    **设置cookie过期时间为0**
+**设置cookie过期时间为0**
 
     function addCookie(objName,objValue,objHours) {
         var str = objName + "=" + escape(objValue);
