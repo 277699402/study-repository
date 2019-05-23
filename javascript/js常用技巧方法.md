@@ -26,3 +26,27 @@
     var keys = Object.getOwnPropertyNames(Person.prototype);  //['constructor',name,age]
 
 **注意结果中包含了不可枚举的constructor属性**
+
+### 原型链实现继承
+
+    function SuperType() {
+        this.property = true;
+    }
+
+    SuperType.prototype.getSuperValue = function () {
+        return this.property;
+    }
+
+    function SubType() {
+        this.subproperty = false;
+    }
+
+    //继承了SuperType
+    SubType.prototype = new SuperType();
+
+    SubType.prototype.getSubValue = function () {
+        return this.subproperty;
+    }
+
+    var instance = new SubType();
+    console.log(instance.getSuperValue);  //true
