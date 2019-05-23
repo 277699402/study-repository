@@ -64,3 +64,13 @@
         var factory = (function f(num) {
             return num <= 1 ? 1 : num * f(num - 1);
         })
+
+## 闭包
+
+**有权访问另外一个函数作用域中的变量的函数**
+
+    function aa(propertyName) {
+        return function(object) {
+            var value = object[propertyName]
+        }
+    }
