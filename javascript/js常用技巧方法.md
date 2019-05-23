@@ -50,3 +50,17 @@
 
     var instance = new SubType();
     console.log(instance.getSuperValue);  //true
+
+## 函数递归
+
+    普通模式:
+
+        function factory(num) {
+            return num <= 1 ? 1 : num * arguments.callee(num - 1);   //arguments.callee 是一个指向正在执行的函数的指针
+        }
+
+    严格模式:
+
+        var factory = (function f(num) {
+            return num <= 1 ? 1 : num * f(num - 1);
+        })
