@@ -9,4 +9,20 @@
         return !object.hasOwnProperty(name) && (name in object)
     }
 
+### 可以使用es5中的 Object.keys() 方法来取得对象上所有可枚举的实例属性
 
+    function Person() {}
+    Person.prototype.name = 'aa';
+    Person.prototype.age = 29;
+
+    var keys = Object.keys(Person.prototype);  //['name','age']
+
+    var p1 = new Person();
+    p1.name = 'bb';
+    var p1keys = Object.keys(p1);       //['name']
+
+**如果想要得到所有实例属性，无论是否可枚举，都可以使用 Object.getOwnPropertyNames() 方法**
+
+    var keys = Object.getOwnPropertyNames(Person.prototype);  //['constructor',name,age]
+
+**注意结果中包含了不可枚举的constructor属性**
