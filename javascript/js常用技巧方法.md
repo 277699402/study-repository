@@ -1,4 +1,4 @@
-### 确定该对象属性到底是否存在于对象中，还是存在于原型中
+## 确定该对象属性到底是否存在于对象中，还是存在于原型中
 
 **同时使用hasOwnProperty()方法和in操作符，就可以确定该对象属性到底是否存在于对象中，还是存在于原型中**
 
@@ -9,7 +9,7 @@
         return !object.hasOwnProperty(name) && (name in object)
     }
 
-### 可以使用es5中的 Object.keys() 方法来取得对象上所有可枚举的实例属性
+## 可以使用es5中的 Object.keys() 方法来取得对象上所有可枚举的实例属性
 
     function Person() {}
     Person.prototype.name = 'aa';
@@ -27,7 +27,7 @@
 
 **注意结果中包含了不可枚举的constructor属性**
 
-### 原型链实现继承
+## 原型链实现继承
 
     function SuperType() {
         this.property = true;
