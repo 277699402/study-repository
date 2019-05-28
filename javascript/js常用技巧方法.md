@@ -74,3 +74,38 @@
             var value = object[propertyName]
         }
     }
+
+## 判断某个值是不是原生数组/函数/正则表达式
+
+    function isArray(value) {
+        return Object.prototype.toString.call(value) == '[object Array]'
+    }
+    function isFunction(value) {
+        return Object.prototype.toString.call(value) == '[object Function]'
+    }
+    function isRegExp(value) {
+        return Object.prototype.toString.call(value) == '[object RegExp]'
+    }
+
+## 实现类数组对象
+
+所谓类数组对象，就是指可以**通过索引属性访问元素**并且**拥有 length** 属性的对象。
+
+    var arrLike = {
+      0: 'name',
+      1: 'age',
+      2: 'job',
+      length: 3
+    }
+
+**类数组对象与数组的区别是类数组对象不能直接使用数组的方法。 **
+
+    我们一般是通过 Function.call 或者 Function.apply 方法来间接调用数组的方法。
+
+    Array.prototype.push.call(arrLike, 'hobby');
+    Array.prototype.push.apply(arrLike, ['hobby']);
+
+
+***使用 [].push.call() 可以实现一个类数组对象***
+
+
