@@ -1,0 +1,9 @@
+##### express请求两分钟超时
+
+    app.use(function(req, res, next) {
+      // 设置所有HTTP请求的超时时间
+      req.setTimeout(1920000);
+      // 设置所有HTTP请求的服务器响应超时时间
+      res.setTimeout(1920000);
+      next();
+    });
