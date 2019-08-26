@@ -9,7 +9,8 @@
     ps -ef | grep nginx         ——— 查看路径
 
 
-
+    source ~/.nvm/nvm.sh        ——— 切换node版本
+    nvm install 4.4.2
 
 
 
