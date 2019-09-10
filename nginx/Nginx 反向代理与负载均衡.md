@@ -1,4 +1,4 @@
-##### Nginx 反向代理与负载均衡
+# Nginx 反向代理与负载均衡
 
 ## proxy_pass
 
@@ -33,13 +33,11 @@
 
     worker_processes    工作进程数，和CPU核数相同
     worker_connections  每个进程允许的最大连接数
-    upstream模块         负载均衡就靠它  语法格式：upstream name {}
-
-    里面写的两个server分别对应着不同的服务器
-    server模块    实现反向代理
-    listen        监督端口号
-    location / {}访问根路径
-    proxy_pass http://firstdemo，代理到firstdemo里两个服务器上
+    upstream模块         负载均衡就靠它  语法格式：upstream name {}   里面写的两个server分别对应着不同的服务器
+    server模块           实现反向代理
+    listen              监督端口号
+    location / {}       访问根路径
+    proxy_pass          http://firstdemo，代理到firstdemo里两个服务器上
 
 ## ip_hash
 
